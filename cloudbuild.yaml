@@ -2,7 +2,7 @@ steps:
 
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/plex-210603/plex:$COMMIT_SHA']
+  args: ['build', '-t', 'gcr.io/plex-210603/plex:$COMMIT_SHA', '.']
 # Push the image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/plex-210603/plex:$COMMIT_SHA']
