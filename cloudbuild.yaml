@@ -2,10 +2,10 @@ steps:
 
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/plex-210603/plex:$COMMIT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/zero65/plex:$COMMIT_SHA', '.']
 # Push the image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/plex-210603/plex:$COMMIT_SHA']
+  args: ['push', 'gcr.io/zero65/plex:$COMMIT_SHA']
 # Deploy image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
@@ -13,8 +13,8 @@ steps:
   - 'deploy'
   - 'plex'
   - '--image'
-  - 'gcr.io/plex-210603/plex:$COMMIT_SHA'
+  - 'gcr.io/zero65/plex:$COMMIT_SHA'
   - '--region'
-  - 'asia-northeast1'
+  - 'asia-south1'
   - '--platform'
   - 'managed'
