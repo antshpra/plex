@@ -1,1 +1,1 @@
-FROM plexinc/pms-docker
+FROM lscr.io/linuxserver/plex:latest
