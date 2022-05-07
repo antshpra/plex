@@ -24,3 +24,6 @@ steps:
   - '1Gi'
   - '--cpu'
   - '1'
+  
+  - '--update-env-vars'
+  - 'PLEX_CLAIM=3MtVeK3p9Xx8UNRCVjpq'
