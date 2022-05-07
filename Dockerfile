@@ -1,1 +1,1 @@
-FROM lscr.io/linuxserver/plex:latest
+FROM lscr.io/linuxserver/plex:docker
