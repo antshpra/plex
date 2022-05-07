@@ -8,6 +8,7 @@ steps:
   args: ['push', 'asia-south1-docker.pkg.dev/zero65/docker/plex:$COMMIT_SHA']
 # Deploy image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
+  hostname: PlexServer
   args:
   - 'run'
   - 'deploy'
