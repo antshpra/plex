@@ -13,7 +13,7 @@ steps:
   - 'deploy'
   - 'plex'
   - '--image'
-  - 'asia-south1-docker.pkg.dev/zero65/docker/:$COMMIT_SHA'
+  - 'asia-south1-docker.pkg.dev/zero65/docker/plex:$COMMIT_SHA'
   - '--region'
   - 'asia-south1'
   - '--platform'
