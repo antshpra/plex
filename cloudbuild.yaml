@@ -26,4 +26,4 @@ steps:
   - '1'
 
   - '--update-env-vars'
-  - 'TZ=US,PLEX_CLAIM=claim-zBeuhxSVmN-hw43jidwJ'
+  - 'PLEX_CLAIM=claim-e5wzL7Bq8K_hugFyj-GF'
